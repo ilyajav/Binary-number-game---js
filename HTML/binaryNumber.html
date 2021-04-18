@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/binaryNumber.css">
+    <title>Binary Number</title>
+</head>
+<body>
+<span id="rules">Rules:<br>
+    You must specify the range of numbers for game<br>
+    Choose a game option: you will guess the computer's number<br> or the computer will guess your number</span>
+<h1 id="binText">Binary Number Game</h1>
+<div id = "firstFields">
+<h2 id="chText">Please, choose game mod</h2>
+<button id="MachineSt">Machine thinks the number</button>
+<button id="HumanSt">Human thinks the number</button>
+</div>
+<div id="stFields">
+    <p>Min number: <input type="number" id="minN" placeholder="Enter min here"></p>
+    <p>Max number: <input type="number" id="maxN" placeholder="Enter max here"></p>
+    <p id="alert"></p>
+    <p id="ple"></p>
+    <button id="contBT">Continue</button>
+</div>
+<div id = "MachineDiv">
+<button id = "contBT1">Continue </button>
+    <p id="machineAnswer"></p>
+</div>
+<div id="answerButtons">
+    <button id="less">Less</button>
+    <button id="guessed">Machine Guessed</button>
+    <button id = "higher">Higher</button>
+</div>
+<div id="answers">
+    <p id="machineChoseN"></p>
+    <button id="answerBT">Please, enter a number</button>
+    <br><input type="number" id="inputField" placeholder="Enter a number here">
+    <p id="errorAns"></p>
+    <p id="resultAns"></p>
+    <p id="counter"></p>
+    <div id="attempts">
+        Attempts:
+    </div>
+</div>
+<br>
+<button id ="res">Start new game</button>
+<script src="../JS/binaryNumber.js">
+</script>
+</body>
+</html>
